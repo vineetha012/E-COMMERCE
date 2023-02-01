@@ -15,10 +15,10 @@ export const Card = ({ data, currentItems }) => {
     return (
         <div className="card-main" onClick={() => selectPost(data)}>
             <div className="cardss" id={data.id} onClick={(e) => cardhandler(e)} >
-                <div>
-                    <div>PRODUCT:{data.title}</div>
-                    <div>CATEGORIE:{data.category}</div>
-                    <div>{data.id}</div>
+                <div >
+                    <div style={{marginBottom:"10px"}}>PRODUCT :- {data.title}</div>
+                    <div style={{marginBottom:"10px"}}>CATEGORIE :- {data.category}</div>
+                    <div style={{marginBottom:"10px"}}>ID :- {data.id}</div>
                     <img src={data.images[1]} className="cardimage" />
                 </div>
             </div>       
@@ -35,7 +35,8 @@ function PopUp({ selectedproduct, setPopUpflag }) {
             <div className='popupcard'>
                 <div className="popupcontainer">
                     <div className="pop-col">
-                        <div className="upperpop ">CATEGORIE:{selectedproduct.category}</div>
+                        <div className="upperpop ">
+                            CATEGORIE:<br/>{selectedproduct.category}</div>
                         <img src={selectedproduct.images[0]} className="cardimage" />
                     </div>
                     <div className="pop-col">
@@ -43,8 +44,9 @@ function PopUp({ selectedproduct, setPopUpflag }) {
                             <button onClick={() => setPopUpflag(false)} className="upperpop closepop">
                                 Close
                             </button>
-                        </div>
+                        </div>                       
                         <div className="description ">Details:{selectedproduct.description}</div>
+                        <div className="description ">BRAND: {selectedproduct.brand}</div>
                     </div>
                 </div>
             </div>

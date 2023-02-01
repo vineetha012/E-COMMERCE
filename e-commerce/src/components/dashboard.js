@@ -66,7 +66,7 @@ export const Dashboard = () => {
                 </div>
                 
             </div>
-            <div className="pageNumbersContainer" style={{color:"wheat"}}>
+            <div className="pageNumbersContainer" style={{color:"black"}}>
                     pages
                     {
                         searchval ? <Pagination products={HandleSearch(products)} setcurrentpage={setcurrentpage} Itemperpage={Itemperpage} />
