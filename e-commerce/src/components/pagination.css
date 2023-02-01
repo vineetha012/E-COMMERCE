@@ -1,0 +1,16 @@
+.pageNumbersContainer{
+    width: 100%;
+    height: 200px;
+    border: 1px solid balck;
+    
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: rgb(40, 40, 40);
+    padding-left: 200px;
+  }
+  .pagenums{
+    width: 40px;
+    /* float: right; */
+    align-items: center;
+  }
+  
